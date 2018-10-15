@@ -1,3 +1,7 @@
+div {
+    min-width: 600px;
+    min-height: 600px;
+}
 table{
     color:black;
     background-color: #efffaf;
@@ -9,17 +13,17 @@ body{
 }
 #object{
     position: absolute;
-    top: 50%;
-    left: 47.7%;
+    top: 485px;
+    left: 915px;
     width: 55px;
     height: 50px;
 
 }
 table {
-    margin-left: 14%;
-    margin-right: 14%;
+    margin-left: 269px;
+    margin-right: 269px;
     table-layout: fixed;
-    width: 70%; /* Ширина таблицы */
+    width: 1335px; /* Ширина таблицы */
     column-width: 55px;
     background: white; /* Цвет фона таблицы */
     color: white; /* Цвет текста */
@@ -33,11 +37,11 @@ td, th {
 
 #main_table{
     position: absolute;
-    top:50%;
+    top:485px;
 }
 input{
     position: absolute;
-    top:65%;
+    top:600px;
     background:maroon ;
     color: white;
     margin:50px;

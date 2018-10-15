@@ -10,9 +10,9 @@ function A() {
         speed = speed * 2;
     var image=document.getElementById("object");
     image.style.position = "absolute";
-    if(image.getBoundingClientRect().left-(58*speed)>290){
+    if(image.getBoundingClientRect().left-(70*speed)>290){
         position+=speed;
-        var x=image.getBoundingClientRect().left-(57.5*speed);
+        var x=image.getBoundingClientRect().left-(70*speed);
     } else {
         /*alert("Вы пытаетесь покинуть зону пригодную для перемещения марсохода!!! \nРекомендуем вам сбросить скорость или вернутся назад!!!");*/
         document.getElementById('for_generate' ).remove();
@@ -28,9 +28,9 @@ function R() {
 
     var image=document.getElementById("object");
     image.style.position = "absolute";
-    if(image.getBoundingClientRect().left+58.56*Math.abs(speed)<1600){
+    if(image.getBoundingClientRect().left+43*Math.abs(speed)<1600){
         position+=speed;
-        var y=image.getBoundingClientRect().left+58.56*Math.abs(speed);
+        var y=image.getBoundingClientRect().left+43*Math.abs(speed);
     } else {
         alert("Вы пытаетесь покинуть зону пригодную для перемещения марсохода!!! \nРекомендуем вам начать движение вперёд!!!");
         document.getElementById('for_generate' ).remove();
