@@ -9,15 +9,17 @@ body{
 }
 #object{
     position: absolute;
-    top: 325px;
-    left: 627px;
-    width: 50px;
+    top: 50%;
+    left: 46.5%;
+    width: 55px;
     height: 50px;
 
 }
 table {
+    margin-left: 14%;
+    margin-right: 14%;
     table-layout: fixed;
-    width: 99%; /* Ширина таблицы */
+    width: 70%; /* Ширина таблицы */
     column-width: 55px;
     background: white; /* Цвет фона таблицы */
     color: white; /* Цвет текста */
@@ -35,7 +37,7 @@ td, th {
 }
 input{
     position: absolute;
-top:65%;
+    top:65%;
     background:maroon ;
     color: white;
     margin:50px;
@@ -43,4 +45,12 @@ top:65%;
     height: 50px;
     border-style: dotted;
     border-spacing: 20px;
+}
+
+#Speed{
+    left: 300px;
+}
+
+#Position{
+    right: 300px;
 }

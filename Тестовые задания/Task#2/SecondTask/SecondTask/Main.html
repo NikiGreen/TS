@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>SecondTask</title>
     <link rel="stylesheet" href="SimleStyle.css">
-    <script src="SeconTaskScript.js"></script>
+    <script src="SecondTaskScript.js"></script>
 
 </head>
-<body background="Resources/Mars.jpg" align="center">
+<body background="Resources/Mars.jpg" align="center" onload="Position">
 <table width="100%" cellpadding="5" cellspacing="0">
     <tr>
         <td width="70%"><h1>Second Task</h1></td><td width="30%"><h2>Nikita Barkhatov</h2></td>
@@ -19,8 +19,8 @@
         <th>-1</th><th>-2</th><th>-3</th><th>-4</th><th>-5</th><th>-6</th><th>-7</th><th>-8</th><th>-9</th><th>-10</th><th>-11</th><th>-12</th>
     </tr>
  </table>
-<input style="left: 110px;" type="button" value="A" onclick="A()"/><input style="right: 110px;" type="button" value="R" onClick="B()"/>
-<input id="Position" style="left: 300px;" type="text" size="5"><input id="Speed" style="right: 300px;" type="text" size="5" onload="Speed">
+<input style="left: 110px;" type="button" value="A"  onclick="forA()" /><input style="right: 110px;" type="button" value="R"  onClick="forR()"/>
+<input id="Speed" type="text" size="5" disabled="disabled"><input id="Position" type="text" size="5" disabled="disabled">
 <img id="object" src="Resources/Rover.jpg" />
 </body>
 </html>
