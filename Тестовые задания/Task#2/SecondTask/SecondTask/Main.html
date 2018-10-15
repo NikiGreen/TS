@@ -5,18 +5,19 @@
     <title>SecondTask</title>
     <link rel="stylesheet" href="SimleStyle.css">
     <script src="SecondTaskScript.js"></script>
+    <script src="ForGenerate.js"></script>
 
 </head>
-<body background="Resources/Mars.jpg" align="center" onload="Position">
+<body background="Resources/Mars.jpg" align="center" onload="main_table()" >
 <table width="100%" cellpadding="5" cellspacing="0">
     <tr>
         <td width="70%"><h1>Second Task</h1></td><td width="30%"><h2>Nikita Barkhatov</h2></td>
     </tr>
 </table>
 <table id=main_table border="1">
-    <tr>
-        <th>11</th><th>10</th><th>9</th><th>8</th><th>7</th><th>6</th><th>5</th><th>4</th><th>3</th><th>2</th><th>1</th><th>0</th>
-        <th>-1</th><th>-2</th><th>-3</th><th>-4</th><th>-5</th><th>-6</th><th>-7</th><th>-8</th><th>-9</th><th>-10</th><th>-11</th><th>-12</th>
+    <tr id="for_generate" >
+        <!--<th >11</th><th>10</th><th>9</th><th>8</th><th>7</th><th>6</th><th>5</th><th>4</th><th>3</th><th>2</th><th>1</th><th>0</th>
+        <th>-1</th><th>-2</th><th>-3</th><th>-4</th><th>-5</th><th>-6</th><th>-7</th><th>-8</th><th>-9</th><th>-10</th><th>-11</th><th>-12</th>-->
     </tr>
  </table>
 <input style="left: 110px;" type="button" value="A"  onclick="forA()" /><input style="right: 110px;" type="button" value="R"  onClick="forR()"/>
