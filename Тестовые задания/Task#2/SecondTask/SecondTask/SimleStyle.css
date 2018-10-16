@@ -8,13 +8,11 @@ table{
 }
 body{
     background-color:silver;
-    /*background: url(img/image.jpg) no-repeat center center fixed;*/
     background-size: cover;
 }
 #object{
     position: absolute;
     top: 485px;
-    left: 915px;
     width: 55px;
     height: 50px;
 
