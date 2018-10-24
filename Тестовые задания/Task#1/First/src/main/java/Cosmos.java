@@ -53,11 +53,11 @@ public class Cosmos {
                             }
 */
 //Работает неверно
-                            for (int l = 0; l < Factorial.calcFactorial(EndPos) * 2; l++) {
+                            /*for (int l = 0; l < Factorial.calcFactorial(EndPos); l++) {
                                 sum = 0;
                                 Pos = 0;
                                 int g=0;
-                                for (int i = 0; i < Factorial.calcFactorial(EndPos) * 2; i++) {
+                                for (int i = 0; i < EndPos; i++) {
 
                                     if (i == minus_position && g==0) {
                                         speed = operation.R();
@@ -81,28 +81,84 @@ public class Cosmos {
                                         sum++;
 
                                     } else break;
-                                    /*{
+                                    *//*{
                                         speed = operation.R();
                                         Pos += speed;
                                         sum++;
 
-                                    }*/
+                                    }*//*
+                                    System.out.println("Позиция= "+Pos);
                                 }
                                 minus_position++;
                             }
-                       /* }}*/
+                       *//* }}*//*
 
 
 
 
-                                System.out.println("Минимальное количество операций= "+/*minIndex*/ answers);
-                    System.out.println(/*Collections.min(answers)*/sum);
+                                System.out.println("Минимальное количество операций= "+*//*minIndex*//* answers);
+                    System.out.println(*//*Collections.min(answers)*//*sum);*/
                     break;
                     }
                 }
 
             }
             System.out.println("*");
+
+        for (int l = 0; l < EndPos; l++) {
+            System.out.println("Старт___________");
+            sum = 0;
+            Pos = 0;
+            speed=0;
+            /*int g=0;*/
+            for (int i = 0; i < Factorial.calcFactorial(EndPos); i++) {
+                System.out.println("Входная Позиция= "+Pos);
+
+                if (i == minus_position /*&& g==0*/) {
+                    speed = operation.R();
+                    Pos += speed;
+                    sum++;
+                   /* g=1;*/
+                    System.out.println("Отнимаем позицию");
+                }
+                if (Pos == EndPos) {
+                    answers.add(sum);
+                    break;
+                } else if((Pos-EndPos)<4 && (Pos-EndPos)>0 ){
+                    speed=operation.R();
+                    Pos+=speed;
+                    sum++;
+                    System.out.println("Уходим назад если можем");
+                }
+
+                else if (Pos <= EndPos + 3) {
+                    speed = operation.A(speed);
+                    Pos += speed;
+                    sum++;
+                    System.out.println("Идём вперёд");
+
+                } else {
+                    System.out.println("Вылет ебанный");
+                    break;}
+                                    /*{
+                                        speed = operation.R();
+                                        Pos += speed;
+                                        sum++;
+
+                                    }*/
+                System.out.println("Позиция= "+Pos);
+            }
+            System.out.println("операции= "+sum);
+            System.out.println("Конец внутреннего цикла");
+            minus_position++;
+        }
+        /* }}*/
+
+
+
+
+        System.out.println("Минимальное количество операций= "+/*minIndex*/ answers);
+        System.out.println(Collections.min(answers));
 
         }
 

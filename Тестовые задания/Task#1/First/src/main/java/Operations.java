@@ -1,6 +1,6 @@
 public class Operations {
     int A(int speed){
-        if (speed==0 || speed<0){
+        if (speed<1){
             speed=1;
         }else{
             speed*=2;
