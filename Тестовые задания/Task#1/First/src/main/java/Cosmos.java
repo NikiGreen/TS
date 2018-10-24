@@ -31,7 +31,7 @@ public class Cosmos {
                     System.out.println("Программа окончила своё выполнение!");
                 break;}
                 else {
-                if((Pos-EndPos)<3){
+                if((Pos-EndPos)<4){
                     speed=operation.R();
                     Pos+=speed;
                     sum++;}
@@ -55,29 +55,37 @@ public class Cosmos {
                             for (int l = 0; l < Factorial.calcFactorial(EndPos) * 2; l++) {
                                 sum = 0;
                                 Pos = 0;
+                                int g=0;
                                 for (int i = 0; i < Factorial.calcFactorial(EndPos) * 2; i++) {
-                                    if (i == minus_position) {
+
+                                    if (i == minus_position && g==0) {
                                         speed = operation.R();
                                         Pos += speed;
                                         sum++;
+                                        g=1;
 
                                     }
                                     if (Pos == EndPos) {
                                         answers.add(sum);
                                         break;
-                                    } else if((Pos-EndPos)<3 && (Pos-EndPos)>0 ){
+                                    } else if((Pos-EndPos)<4 && (Pos-EndPos)>0 ){
                                         speed=operation.R();
                                         Pos+=speed;
                                         sum++;
                                     }
 
-                                    else if (Pos < EndPos + 2) {
+                                    else if (Pos <= EndPos + 3) {
                                         speed = operation.A(speed);
                                         Pos += speed;
                                         sum++;
 
                                     } else
-                                        break;
+                                    {
+                                        speed = operation.R();
+                                        Pos += speed;
+                                        sum++;
+
+                                    }
                                 }
                                 minus_position++;
                             }
