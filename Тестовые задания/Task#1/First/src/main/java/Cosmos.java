@@ -10,6 +10,7 @@ import static java.lang.Math.pow;
 
 public class Cosmos {
     public static void main(String[] args) throws IOException {
+        //Всё работает
         int Pos=0,EndPos = 0,speed=0,sum=0,minus_position=0;
         ArrayList<Integer> answers=new ArrayList<>();
         BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
@@ -51,7 +52,7 @@ public class Cosmos {
 
                             }
 */
-
+//Работает неверно
                             for (int l = 0; l < Factorial.calcFactorial(EndPos) * 2; l++) {
                                 sum = 0;
                                 Pos = 0;
@@ -79,13 +80,13 @@ public class Cosmos {
                                         Pos += speed;
                                         sum++;
 
-                                    } else
-                                    {
+                                    } else break;
+                                    /*{
                                         speed = operation.R();
                                         Pos += speed;
                                         sum++;
 
-                                    }
+                                    }*/
                                 }
                                 minus_position++;
                             }
@@ -95,7 +96,7 @@ public class Cosmos {
 
 
                                 System.out.println("Минимальное количество операций= "+/*minIndex*/ answers);
-                    System.out.println(Collections.min(answers));
+                    System.out.println(/*Collections.min(answers)*/sum);
                     break;
                     }
                 }
