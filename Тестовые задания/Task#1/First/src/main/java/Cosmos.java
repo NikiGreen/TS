@@ -6,17 +6,18 @@ import java.util.Collections;
 
 public class Cosmos {
     public static void main(String[] args) throws IOException {
-        int Pos = 0, EndPos = 0, speed = 0, sum = 0, minus_position = 0;
+        int Pos = 0, EndPos = 0, speed = 0, sum = 0;
         ArrayList<Integer> answers = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Введите позицию до которой необходимо добраться марсоходу");
-        EndPos = Integer.parseInt(reader.readLine());
-        /*while (EndPos < 0) {
-            System.out.println("Введите позицию до которой необходимо добраться марсоходу не являющуюся отрицательным числом");
-            EndPos = Integer.parseInt(reader.readLine());
-        }*/
 
-        for (; ; ) {
+        System.out.println("Введите позицию до которой необходимо добраться марсоходу");
+        try { EndPos = Integer.parseInt(reader.readLine());
+        }catch (NumberFormatException e){
+            System.out.println("Вы неверно ввели число!\nПожалуйста ,перезапустите программу и попробуйте снова!");
+            System.exit(0);
+        }
+        //Алгоритм подсчёта для простых и отриацительных финальных позиций
+        for (;;) {
             if (Pos < EndPos) {
                 speed = A(speed);
                 Pos += speed;
@@ -36,12 +37,12 @@ public class Cosmos {
                     Pos += speed;
                     sum++;
                 } else {
-                    break;
-                }
+                    break; }
             }
         }
-
-if(EndPos>=0){
+        //Алгоритм подсчёта всех вариаций для финальных позиций отличных от нуля
+        int minus_position = 0;
+        if(EndPos>=0){
         for (int l = 0; l < EndPos; l++) {
             sum = 0;
             Pos = 0;
@@ -73,10 +74,11 @@ if(EndPos>=0){
             minus_position++;
         }
     }
+    //Окончание работы двух алгоритмов
         System.out.println("Минимальное количество операций= "+ answers);
         System.out.println("Минимальное количество операций= "+ Collections.min(answers)); }
 
-    private static int A(int speed){
+    private static int A(int speed){//Метод управляющий скоростью движения вперёд
         if (speed<1){
             speed=1;
         }else{
@@ -84,7 +86,7 @@ if(EndPos>=0){
         }
         return speed; }
 
-    private static int R(){
+    private static int R(){//Метод управляющий скоростью движения назад
         return -1; }
     }
 
