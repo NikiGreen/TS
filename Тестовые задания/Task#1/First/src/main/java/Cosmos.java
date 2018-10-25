@@ -17,10 +17,9 @@ public class Cosmos {
             System.out.println("Введите позицию до которой необходимо добраться марсоходу");
             EndPos=Integer.parseInt(reader.readLine());
 
-        Operations operation=new Operations();
         for(;;){
             if (Pos<EndPos) {
-                speed=operation.A(speed);
+                speed=A(speed);
                 Pos += speed;
                 sum++;
             }else
@@ -33,7 +32,7 @@ public class Cosmos {
                 break;}
                 else {
                 if((Pos-EndPos)<4){
-                    speed=operation.R();
+                    speed=R();
                     Pos+=speed;
                     sum++;}
                 else{
@@ -55,7 +54,7 @@ public class Cosmos {
             System.out.println("Входная Позиция= " + Pos);
 
             if (i == minus_position /*&& g==1*/) {
-                speed = operation.R();
+                speed = R();
                 Pos += speed;
                 sum++;
 
@@ -66,12 +65,12 @@ public class Cosmos {
                 answers.add(sum);
                 break;
             } else if ((Pos - EndPos) < 4 && (Pos - EndPos) > 0) {
-                speed = operation.R();
+                speed = R();
                 Pos += speed;
                 sum++;
                 System.out.println("Уходим назад если можем");
             } else if (Pos <= EndPos + 3) {
-                speed = operation.A(speed);
+                speed = A(speed);
                 Pos += speed;
                 sum++;
                 System.out.println("Идём вперёд");
@@ -79,7 +78,7 @@ public class Cosmos {
             } else {
                 /* break;}*/
                 /*{*/
-                speed = operation.R();
+                speed = R();
                 Pos += speed;
                 sum++;
                 System.out.println("Отнимаем позицию так число слишком сильно вышло за передлы");
@@ -100,11 +99,17 @@ public class Cosmos {
 
         }
 
+    private static int A(int speed){
+        if (speed<1){
+            speed=1;
+        }else{
+            speed*=2;
+        }
+        return speed;
+    }
 
-
-
-
-
-
+    private static int R(){
+        return -1;
+    }
     }
 
