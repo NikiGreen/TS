@@ -16,44 +16,13 @@
       <file leaf-file-name="Cosmos.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Cosmos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
               <folding>
-                <element signature="e#3576#3577#0" expanded="true" />
-                <element signature="e#3601#3602#0" expanded="true" />
-                <marker date="1540461649542" expanded="true" signature="1387:1559" ph="{...}" />
-                <marker date="1540461649542" expanded="true" signature="1650:3216" ph="{...}" />
+                <element signature="imports" expanded="true" />
+                <marker date="1540464661469" expanded="true" signature="1411:1471" ph="{...}" />
+                <marker date="1540464661469" expanded="true" signature="1539:2413" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Factorial.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Factorial.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_161/src.zip!/java/util/ArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14637">
-              <caret line="861" column="0" lean-forward="false" selection-start-line="861" selection-start-column="0" selection-end-line="861" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Operations.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Operations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -76,8 +45,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Factorial.java" />
         <option value="$PROJECT_DIR$/src/main/java/Operations.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Factorial.java" />
         <option value="$PROJECT_DIR$/src/main/java/Cosmos.java" />
       </list>
     </option>
@@ -281,12 +250,12 @@
       <workItem from="1540380991616" duration="9161000" />
       <workItem from="1540391664702" duration="459000" />
       <workItem from="1540413821800" duration="3537000" />
-      <workItem from="1540457244392" duration="3274000" />
+      <workItem from="1540457244392" duration="6526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23841000" />
+    <option name="totallyTimeSpent" value="27093000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -381,10 +350,9 @@
         <state relative-caret-position="1989">
           <caret line="117" column="5" lean-forward="false" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
           <folding>
-            <element signature="e#3576#3577#0" expanded="true" />
-            <element signature="e#3601#3602#0" expanded="true" />
-            <marker date="1540461649542" expanded="true" signature="1387:1559" ph="{...}" />
-            <marker date="1540461649542" expanded="true" signature="1650:3216" ph="{...}" />
+            <element signature="imports" expanded="true" />
+            <marker date="1540464661469" expanded="true" signature="1411:1471" ph="{...}" />
+            <marker date="1540464661469" expanded="true" signature="1539:2413" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -426,10 +394,9 @@
         <state relative-caret-position="952">
           <caret line="56" column="35" lean-forward="false" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
           <folding>
-            <element signature="e#3576#3577#0" expanded="true" />
-            <element signature="e#3601#3602#0" expanded="true" />
-            <marker date="1540461649542" expanded="true" signature="1387:1559" ph="{...}" />
-            <marker date="1540461649542" expanded="true" signature="1650:3216" ph="{...}" />
+            <element signature="imports" expanded="true" />
+            <marker date="1540464661469" expanded="true" signature="1411:1471" ph="{...}" />
+            <marker date="1540464661469" expanded="true" signature="1539:2413" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -471,10 +438,9 @@
         <state relative-caret-position="1547">
           <caret line="91" column="30" lean-forward="true" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
           <folding>
-            <element signature="e#3576#3577#0" expanded="true" />
-            <element signature="e#3601#3602#0" expanded="true" />
-            <marker date="1540461649542" expanded="true" signature="1387:1559" ph="{...}" />
-            <marker date="1540461649542" expanded="true" signature="1650:3216" ph="{...}" />
+            <element signature="imports" expanded="true" />
+            <marker date="1540464661469" expanded="true" signature="1411:1471" ph="{...}" />
+            <marker date="1540464661469" expanded="true" signature="1539:2413" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -500,10 +466,9 @@
         <state relative-caret-position="340">
           <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
-            <element signature="e#3576#3577#0" expanded="true" />
-            <element signature="e#3601#3602#0" expanded="true" />
-            <marker date="1540461649542" expanded="true" signature="1387:1559" ph="{...}" />
-            <marker date="1540461649542" expanded="true" signature="1650:3216" ph="{...}" />
+            <element signature="imports" expanded="true" />
+            <marker date="1540464661469" expanded="true" signature="1411:1471" ph="{...}" />
+            <marker date="1540464661469" expanded="true" signature="1539:2413" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -529,10 +494,9 @@
         <state relative-caret-position="578">
           <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
           <folding>
-            <element signature="e#3576#3577#0" expanded="true" />
-            <element signature="e#3601#3602#0" expanded="true" />
-            <marker date="1540461649542" expanded="true" signature="1387:1559" ph="{...}" />
-            <marker date="1540461649542" expanded="true" signature="1650:3216" ph="{...}" />
+            <element signature="imports" expanded="true" />
+            <marker date="1540464661469" expanded="true" signature="1411:1471" ph="{...}" />
+            <marker date="1540464661469" expanded="true" signature="1539:2413" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -555,7 +519,7 @@
     </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_161/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14637">
+        <state relative-caret-position="-340">
           <caret line="861" column="0" lean-forward="false" selection-start-line="861" selection-start-column="0" selection-end-line="861" selection-end-column="0" />
           <folding />
         </state>
@@ -569,31 +533,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Factorial.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="32" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Operations.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Factorial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Cosmos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
           <folding>
-            <element signature="e#3576#3577#0" expanded="true" />
-            <element signature="e#3601#3602#0" expanded="true" />
-            <marker date="1540461649542" expanded="true" signature="1387:1559" ph="{...}" />
-            <marker date="1540461649542" expanded="true" signature="1650:3216" ph="{...}" />
+            <element signature="imports" expanded="true" />
+            <marker date="1540464661469" expanded="true" signature="1411:1471" ph="{...}" />
+            <marker date="1540464661469" expanded="true" signature="1539:2413" ph="{...}" />
           </folding>
         </state>
       </provider>
