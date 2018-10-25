@@ -38,66 +38,6 @@ public class Cosmos {
                     sum++;}
                 else{
                     System.out.println("Для эффективного достижение цели нужен ранний сброс скорости");
-
-
-
-          /*          for(int l1 = 0; l1< Factorial.calcFactorial(EndPos)*2; l1++){
-                        sum=0;
-                        Pos=0;
-                        for(int i1 = 0; i1< Factorial.calcFactorial(EndPos)*2; i1++) {
-                            if (i1 == minus_position) {
-                                speed = operation.R();
-                                Pos += speed;
-                                sum++;
-
-                            }
-*/
-//Работает неверно
-                            /*for (int l = 0; l < Factorial.calcFactorial(EndPos); l++) {
-                                sum = 0;
-                                Pos = 0;
-                                int g=0;
-                                for (int i = 0; i < EndPos; i++) {
-
-                                    if (i == minus_position && g==0) {
-                                        speed = operation.R();
-                                        Pos += speed;
-                                        sum++;
-                                        g=1;
-
-                                    }
-                                    if (Pos == EndPos) {
-                                        answers.add(sum);
-                                        break;
-                                    } else if((Pos-EndPos)<4 && (Pos-EndPos)>0 ){
-                                        speed=operation.R();
-                                        Pos+=speed;
-                                        sum++;
-                                    }
-
-                                    else if (Pos <= EndPos + 3) {
-                                        speed = operation.A(speed);
-                                        Pos += speed;
-                                        sum++;
-
-                                    } else break;
-                                    *//*{
-                                        speed = operation.R();
-                                        Pos += speed;
-                                        sum++;
-
-                                    }*//*
-                                    System.out.println("Позиция= "+Pos);
-                                }
-                                minus_position++;
-                            }
-                       *//* }}*//*
-
-
-
-
-                                System.out.println("Минимальное количество операций= "+*//*minIndex*//* answers);
-                    System.out.println(*//*Collections.min(answers)*//*sum);*/
                     break;
                     }
                 }
@@ -105,62 +45,66 @@ public class Cosmos {
             }
             System.out.println("*");
 
-        for (int l = 0; l < EndPos; l++) {
-            System.out.println("Старт___________");
-            sum = 0;
-            Pos = 0;
-            speed=0;
-            /*int g=0;*/
-            for (int i = 0; i < Factorial.calcFactorial(EndPos); i++) {
-                System.out.println("Входная Позиция= "+Pos);
+    for (int l = 0; l < EndPos; l++) {
+        System.out.println("Старт___________");
+        sum = 0;
+        Pos = 0;
+        speed = 0;
+        /*          int g=0;*/
+        for (int i = 0; i < EndPos; i++) {
+            System.out.println("Входная Позиция= " + Pos);
 
-                if (i == minus_position /*&& g==0*/) {
-                    speed = operation.R();
-                    Pos += speed;
-                    sum++;
-                   /* g=1;*/
-                    System.out.println("Отнимаем позицию");
-                }
-                if (Pos == EndPos) {
-                    answers.add(sum);
-                    break;
-                } else if((Pos-EndPos)<4 && (Pos-EndPos)>0 ){
-                    speed=operation.R();
-                    Pos+=speed;
-                    sum++;
-                    System.out.println("Уходим назад если можем");
-                }
+            if (i == minus_position /*&& g==1*/) {
+                speed = operation.R();
+                Pos += speed;
+                sum++;
 
-                else if (Pos <= EndPos + 3) {
-                    speed = operation.A(speed);
-                    Pos += speed;
-                    sum++;
-                    System.out.println("Идём вперёд");
-
-                } else {
-                    System.out.println("Вылет ебанный");
-                    break;}
-                                    /*{
-                                        speed = operation.R();
-                                        Pos += speed;
-                                        sum++;
-
-                                    }*/
-                System.out.println("Позиция= "+Pos);
+                System.out.println("Отнимаем позицию");
             }
-            System.out.println("операции= "+sum);
-            System.out.println("Конец внутреннего цикла");
-            minus_position++;
+            /*g=1;*/
+            if (Pos == EndPos) {
+                answers.add(sum);
+                break;
+            } else if ((Pos - EndPos) < 4 && (Pos - EndPos) > 0) {
+                speed = operation.R();
+                Pos += speed;
+                sum++;
+                System.out.println("Уходим назад если можем");
+            } else if (Pos <= EndPos + 3) {
+                speed = operation.A(speed);
+                Pos += speed;
+                sum++;
+                System.out.println("Идём вперёд");
+
+            } else {
+                /* break;}*/
+                /*{*/
+                speed = operation.R();
+                Pos += speed;
+                sum++;
+                System.out.println("Отнимаем позицию так число слишком сильно вышло за передлы");
+            }
+            System.out.println("Позиция= " + Pos);
         }
-        /* }}*/
+        System.out.println("операции= " + sum);
+        System.out.println("Конец внутреннего цикла");
+        if (sum > 1000) {
+            System.out.println("Количество операций превышает 1000,дальнейший подсчёт не эффективен");
+            break;
+        }
+        minus_position++;
+    }
 
-
-
-
-        System.out.println("Минимальное количество операций= "+/*minIndex*/ answers);
-        System.out.println(Collections.min(answers));
+        System.out.println("Минимальное количество операций= "+ answers);
+        System.out.println("Минимальное количество операций= "+Collections.min(answers));
 
         }
+
+
+
+
+
+
 
     }
 
